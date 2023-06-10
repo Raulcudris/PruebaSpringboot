@@ -1,0 +1,18 @@
+server:
+  port: 6071
+  servlet:
+    context-path: /api 
+spring:
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      hikari:
+        maximumPoolSize: 10
+        minimumIdle: 5
+        jdbc-url: "jdbc:mysql://localhost/Users"
+      password: root
+      username: admin
+      
+  management:
+     health:
+      jms:
+        enabled: true
